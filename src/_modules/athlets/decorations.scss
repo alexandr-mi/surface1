@@ -1,0 +1,138 @@
+.athlets__media-decorations {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.athlets__media-decoration-line1 {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 0px;
+  height: 5px;
+  transform-origin: right;
+  transform: rotate(-50deg);
+  background-color: rgba(134, 99, 229, 1.00);
+  z-index: -1;
+  transition: width 0.7s;
+}
+
+.athlets__media-decoration-cross1 {
+  width: 18px;
+  height: 18px;
+  fill: rgba(123, 89, 225, 1.00);
+  position: absolute;
+  top: 110px;
+  right: 500px;
+  opacity: 0;
+}
+
+.athlets__media-decoration-cross2 {
+  width: 18px;
+  height: 18px;
+  fill: rgba(123, 89, 225, 1.00);
+  position: absolute;
+  top: 120px;
+  right: 480px;
+  opacity: 0;
+}
+
+.athlets__media-decoration-cross3 {
+  width: 18px;
+  height: 18px;
+  fill: rgba(123, 89, 225, 1.00);
+  position: absolute;
+  top: 500px;
+  right: 0px;
+  opacity: 0;
+}
+
+.athlets__media.show {
+  .athlets__media-decoration-line1 {
+    width: 800px;
+  }
+
+  .athlets__media-decoration-cross1 {
+    animation-name: crossAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  .athlets__media-decoration-cross2 {
+    animation-name: crossAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  .athlets__media-decoration-cross3 {
+    animation-name: crossAnimation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes crossAnimation {
+  0% {
+    opacity: 0.9;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  30% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .athlets__media-decoration-cross1 {
+    top: -17px;
+    right: 228px;
+  }
+
+  .athlets__media-decoration-cross2 {
+    top: 0px;
+    right: 205px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .athlets__media.show {
+    .athlets__media-decoration-line1 {
+      right: -5px;
+      top: 15px;
+      width: 290px;
+      transform: rotate(-46deg);
+      height: 3px;
+    }
+  }
+
+  .athlets__media-decoration-cross1 {
+    top: 10px;
+    right: 180px;
+  }
+
+  .athlets__media-decoration-cross2 {
+    top: 20px;
+    right: 160px;
+  }
+
+  .athlets__media-decoration-cross3 {
+    top: 200px;
+  }
+}

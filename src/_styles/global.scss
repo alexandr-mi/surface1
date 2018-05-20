@@ -1,0 +1,129 @@
+// Normalize Styles
+@import 'node_modules/normalize.scss/normalize';
+
+// Fonts import
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+  url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+  url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('ProximaNova-Black.eot');
+  src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+  url('ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+  url('ProximaNova-Black.woff') format('woff'),
+  url('ProximaNova-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body { overflow-x: hidden; }
+
+body {
+  position: relative;
+  width: 100%;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+section {
+  display: inline-block;
+  vertical-align:top;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: 5px;
+}
+
+
+h2 {
+  font-size: 90px;
+  color: #e7e7e7;
+  margin: 0;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 36px;
+  color: #c1c1c1;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container-main {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 32px;
+  }
+}

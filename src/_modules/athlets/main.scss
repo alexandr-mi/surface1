@@ -1,0 +1,188 @@
+@import "decorations";
+
+.athlets {
+  width: 100%;
+}
+.athlets__container {
+  padding-top: 115px;
+  position: relative;
+}
+
+.athlets__media {
+  right: calc(50% + 95px);
+  width: 550px;
+  position: absolute;
+  bottom: -29px;
+  z-index: 1;
+}
+
+.athlets__media-img {
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+.athlets__feature-list {
+  width: 100%;
+}
+
+.athlets__feature-item {
+  padding: 60px 0;
+}
+
+.athlets__feature-item:nth-child(3) {
+  padding: 90px 0;
+}
+
+.athlets__feature-item:nth-child(1) {
+  background-color: #fff;
+
+  .athlets__feature-item-counter-number {
+    letter-spacing: 1px;
+  }
+}
+
+.athlets__feature-item:nth-child(2) {
+  background-color: rgba(244, 242, 249, 1.00);
+}
+
+.athlets__feature-item:nth-child(3) {
+  background-color: rgba(84, 54, 169, 1.00);
+
+
+  .athlets__feature-item-counter-decoration {
+    background-color: #fff;
+  }
+}
+
+.athlets__feature-title {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.athlets__feature-item-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.athlets__feature-item-counter-number {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: left;
+}
+
+.athlets__feature-item-counter-decoration {
+  width: 22px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: rgba(83, 54, 169, 1.00);
+}
+
+.athlets__feature-item-name {
+  height: 30px;
+  line-height: 30px;
+}
+
+.athlets__feature-descreption {
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .athlets__container {
+    padding-top: 80px;
+    position: relative;
+  }
+
+  .athlets__feature-item {
+    padding: 40px 0;
+  }
+
+  .athlets__feature-item:nth-child(3) {
+    padding: 40px 0;
+  }
+
+  .athlets__media {
+    width: 450px;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .athlets__container {
+    padding-top: 30px;
+    position: relative;
+  }
+
+  .athlets__title {
+    margin-bottom: 245px;
+  }
+  .athlets__media {
+    width: 190px;
+    height: 290px;
+    right: 50%;
+    top: 80px;
+    transform: translateX(50%);
+    z-index: 9999;
+  }
+
+  .athlets__feature-title {
+    height: 20px;
+    align-items: center;
+  }
+  .athlets__feature-item-counter {
+    height: 20px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .athlets__feature-item-counter-number {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .athlets__feature-item-counter-decoration {
+    width: 18px;
+    height: 4px;
+  }
+
+  .athlets__feature-list {
+    background-color: rgba(243, 242, 248, 1.00);
+  }
+
+  .athlets__feature-item {
+    padding: 80px 0;
+    background-color: transparent !important;
+  }
+}
+
+.players__feature-item:nth-child(3) {
+  background-color: rgba(13, 16, 47, 1.00);
+
+  .players__feature-item-counter-number {
+    color: rgba(133, 100, 229, 1.00);
+  }
+
+  .players__feature-descreption {
+    color: white;
+  }
+  .players__feature-item-counter-decoration {
+    background-color: #fff;
+  }
+}
+.athlets__media.show {
+  .athlets__media-img {
+    opacity: 1;
+  }
+}

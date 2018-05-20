@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  z-index: 100;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__for-title {
+  color: white;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 520px) {
+  .header__for {
+    display: none;
+  }
+  .header__container {
+    justify-content: center;
+  }
+}

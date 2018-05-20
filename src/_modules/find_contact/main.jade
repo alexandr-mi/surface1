@@ -1,0 +1,15 @@
+include ../counter/main
+
+section.find_contact
+  .find_contact__container
+    .find_contact__main
+      .find_contact__main-content
+        +counter( '02' )
+        h2.find_contact__main-title FIND CONTACT
+        p.find_contact__main-description
+          | Contact others to find right coach
+          br.find_contact__main-description-br
+          |  or athlete you are looking for.
+        .find_contact__main-decoration
+    .find_contact__media
+      img.find_contact__media-img(src='./images/find_contact.jpg')
